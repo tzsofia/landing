@@ -18,6 +18,8 @@ a{
 	padding: 16px 48px;
 	border-radius: 2px;
 	display: inline-block;
+	font-weight: bold;
+	margin-top: 30px;
 }
 
 a:hover{
@@ -35,21 +37,67 @@ a:hover{
 .card-white{
 	background-color: white;
 	width: 250px;
+	border-radius: 6px;
+	box-shadow: 1px 1px 10px rgba(0,0,0,0.1);
+	padding: 18px;
+	margin-bottom: 20px;
 }
 
-img{
-	width: 250px;
+.card-white img{
+	width: 180px;
+	height: 180px;
+	object-fit: cover;
+	border-radius: 2px;
+}
+
+.container{
+	width: 800px;
+	margin: auto;
+	margin-top: 30px;
 }
 
 #footer{
 	background-color: #e4e3e3;
 	padding: 15px 0;
+	margin-top: 50px;
 }
 
-.cards {
-	display:grid;
+.cards{
+	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
 	grid-gap: 16px;
-	padding-left: 115px;
-	margin: 20px;
+}
+
+.container h3 { 
+text-align: left;
+margin-top: 20px;
+margin-bottom: 20px;
+}
+
+@media (max-width: 800px) {
+	.cards {
+		grid-template-columns: 1fr;
+	}
+
+	.card-white{
+		width: auto;
+	}
+}
+
+@media (min-width: 500px) {
+	.container {
+		width: 400px;
+	}
+}
+
+@media (min-width: 800px) {
+	.container {
+		width: 600px;
+	}
+}
+
+@media (min-width: 1000px) {
+	.container {
+		width: 800px;
+	}
 }
