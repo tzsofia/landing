@@ -1,0 +1,55 @@
+/* Write some CSS below */
+body{
+	background-color: #ffdecf;
+	color: #3f4441;
+	font-family: 'Cardo', serif;
+	margin: 0;
+	text-align: center;
+}
+
+body h1,h2{
+	color: #ffdecf;
+}
+
+a{
+	color: #b83b5e;
+	text-decoration: none;
+	background-color:#ffdecf;
+	padding: 16px 48px;
+	border-radius: 2px;
+	display: inline-block;
+}
+
+a:hover{
+	color: #36151E;
+}
+
+#banner{
+	background-image: url(images/background.jpg);
+	background-position: center;
+	background-size: cover;
+	height: 250px;
+	padding: 150px 0;
+}
+
+.card-white{
+	background-color: white;
+	width: 250px;
+}
+
+img{
+	width: 250px;
+}
+
+#footer{
+	background-color: #e4e3e3;
+	padding: 15px 0;
+}
+
+.cards {
+	display:grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-gap: 16px;
+	padding-left: 115px;
+	margin: 20px;
+}
